@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow-x: hidden;
+}
+
+/**
+------------------------------------
+---------- HEADER ------------------
+------------------------------------
+**/
+
+.navbar {
+  position: sticky;
+  display: flex;
+  height: 80px;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar--container {
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  max-width: 1366px;
+  padding: 0 50px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+#circle {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #ffa500;
+  margin-right: 20px;
+}
+
+#name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar--menu {
+  display: flex;
+  margin-right: -20px;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar--item {
+  height: 80px;
+}
+.line-image {
+  border-left: 1px solid #0c0c0c;
+  height: 24px;
+}
+
+.navbar--links {
+  display: flex;
+  width: 125px;
+  height: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  color: #191f2a;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/**
+------------------------------------
+---------- FIRST SECTION -----------
+------------------------------------
+**/
+
+.first-section {
+  max-width: 1100px;
+  height: 604px;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-container {
+  max-width: 250px;
+  margin-right: 50px;
+}
+.contact-text {
+  margin-left: 100px;
+}
+.contact-container section{
+  width: 100%;
+}
+
+.contact-container .form-line{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contacta h1 {
+  font-size: 40px;
+}
+.contacta p {
+  margin-top: 5px;
+}
+
+.phone {
+  margin-top: 50px;
+}
+.phone h1 {
+  font-size: 25px;
+}
+.phone p {
+  margin-top: 5px;
+}
+
+.email {
+  margin-top: 20px;
+}
+
+.email h1 {
+  font-size: 25px;
+}
+
+.email p {
+  margin-top: 5px;
+}
+input,
+label {
+  display: block;
+}
+
+
+input#fname {
+  height: 35px;
+  width: 100%;
+}
+input#lname {
+  height: 35px;
+  width: 100%;
+}
+input#email {
+  height: 35px;
+  width: 100%;
+}
+.form-line input{
+  height: 35px;
+  width: 100%;
+}
+input#message {
+  height: 100px;
+  /* width: 90%; */
+}
+.first-line {
+  margin-bottom: -30px;
+}
+.second-line {
+  margin-bottom: 20px;
+}
+.message {
+  display: flex;
+  
+}
+section #circle {
+  /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  /* (B) BACKGROUND COLOR */
+  background: #ffa500;
+  border: 1px solid #000;
+  /* (C) NECESSARY TO POSITION TEXT BLOCK */
+  line-height: 0;
+  position: relative;
+  margin-left: 30px;
+}
+
+/* (D) MATCH HEIGHT */
+section #circle ::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* (E) TEXT BLOCK */
+.circle-txt {
+  /* (E1) CENTER TEXT IN CIRCLE */
+  position: absolute;
+  bottom: -50%;
+  width: 100%;
+  text-align: center;
+
+  /* (E2) THE FONT - NOT REALLY IMPORTANT */
+  font-family: arial, sans-serif;
+  font-weight: bold;
+}
